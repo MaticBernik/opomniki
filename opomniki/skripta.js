@@ -17,4 +17,15 @@ window.addEventListener('load', function() {
 	}
 	setInterval(posodobiOpomnike, 1000);
 	
+	document.getElementById("prijavniGumb").onclick = function (event) {
+		
+		console.log("OnClick funkcija aktivirana!");
+		var username = document.getElementById("uporabnisko_ime").value;
+		console.log(username);
+		document.getElementById("uporabnik").innerHTML = username;
+		document.querySelector(".pokrivalo").style.visibility = "hidden";
+		
+	};
+	
+	
 });
